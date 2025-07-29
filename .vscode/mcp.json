@@ -1,0 +1,25 @@
+{
+  "servers": {
+    "mysql": {
+      "type": "stdio",
+      "command": "/usr/local/bin/npx",
+      "args": ["-y", "@benborla29/mcp-server-mysql"],
+      "env": {
+        "MYSQL_HOST": "localhost",
+        "MYSQL_PORT": "3306",
+        "MYSQL_USER": "root",
+        "MYSQL_PASSWORD": "",
+        "MYSQL_DATABASE": "bulkSMS",
+        "MYSQL_SSL": "false",
+        "ALLOW_INSERT_OPERATION": "true",
+        "ALLOW_UPDATE_OPERATION": "true",
+        "ALLOW_DELETE_OPERATION": "true",
+        "ENABLE_LOGGING": "true",
+        "MYSQL_LOG_LEVEL": "debug",
+        "MULTI_DB_MODE": "false",
+        "PATH": "/usr/local/bin:/usr/bin:/bin",
+        "NODE_PATH": "/usr/local/lib/node_modules"
+      }
+    }
+  }
+}
